@@ -1,0 +1,37 @@
+<section class="blog-list px-3 py-5 p-md-5">
+  <div class="container">
+    <div class="row">
+      {% for item in postListItems%}
+        <div class="col-md-4 mb-3">
+          <div class="card blog-post-card">
+            <img class="card-img-top" src="/images/posts/placeholder.jpg" alt="image">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="theme-link" href="{{ item.url }}">{{ item.data.title }}</a>
+              </h5>
+              <p class="card-text">{{ item.data.description }}</p>
+              <p class="mb-0">
+                <a class="more-link" href="blog-post.html">Read more →</a>
+              </p>
+
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">{{ item.data.date | dateFilter }}</small>
+            </div>
+          </div>
+        </div>
+        {% endfor%}
+    </div>
+
+    {% if pagination.href.next or pagination.href.previous %}
+      <nav class="blog-nav nav nav-justified my-5">
+        {% if pagination.href.previous %}
+          <a class="nav-link-prev nav-item nav-link rounded-left" href="{{ pagination.href.previous }}{{ paginationAnchor }}">Previous{% include 'partials/svg/previous.svg'%}</a>
+        {% endif %}
+        {% if pagination.href.next %}
+          <a class="nav-link-next nav-item nav-link rounded" href="{{ pagination.href.next }}{{ paginationAnchor }}">Next{% include 'partials/svg/next.svg'%}</a>
+        {% endif%}
+      </nav>
+      {% endif %}
+  </div>
+</section>

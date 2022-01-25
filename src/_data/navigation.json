@@ -1,0 +1,14 @@
+{
+    "items": [
+      {
+        "text": "About Me",
+        "url": "/",
+        "icon": "partials/svg/about.svg"
+      },
+      {
+        "text": "Blog",
+        "url": "/blog/",
+        "icon": "partials/svg/blog.svg"
+      }
+    ]
+}

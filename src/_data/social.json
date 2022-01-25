@@ -1,0 +1,19 @@
+{
+    "items": [
+      {
+        "text": "Twitter",
+        "url": "#",
+        "icon": "partials/svg/twitter.svg"
+      },
+      {
+        "text": "LinkedIn",
+        "url": "#",
+        "icon": "partials/svg/linkedin.svg"
+      },
+      {
+        "text": "Github",
+        "url": "#",
+        "icon": "partials/svg/github.svg"
+      }
+    ]
+  }
