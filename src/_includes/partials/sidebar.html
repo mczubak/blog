@@ -19,7 +19,7 @@
             {% for item in social.items %}
             <li class="list-inline-item">
               <a href="{{ item.url }}">
-                {% include item.icon %}
+                <i class="{{ item.icon }}"></i>
               </a>
             </li>
             {% endfor %}
@@ -31,7 +31,7 @@
           {% for item in navigation.items%}
           <li class="nav-item {{ helpers.isCurrentPage(item.url, page.url) | safe }}">
             <a class="nav-link" href="{{ item.url }}">
-              {% include item.icon %}
+              <i class="{{ item.icon }}"></i>
               {{ item.text }}<span class="sr-only">(current)</span>
             </a>
           </li>
@@ -40,7 +40,7 @@
 
         <div class="dark-mode-toggle text-center w-100">
           <hr class="mb-4">
-          <h4 class="toggle-name mb-3 ">{% include "partials/svg/dark_mode.svg" %}Dark Mode</h4>
+          <h4 class="toggle-name mb-3 "><i class="fas fa-adjust"></i> Dark Mode</h4>
 
           <input class="toggle" id="darkmode" type="checkbox">
           <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>

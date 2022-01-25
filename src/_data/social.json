@@ -3,17 +3,17 @@
       {
         "text": "Twitter",
         "url": "#",
-        "icon": "partials/svg/twitter.svg"
+        "icon": "fab fa-twitter"
       },
       {
         "text": "LinkedIn",
         "url": "#",
-        "icon": "partials/svg/linkedin.svg"
+        "icon": "fab fa-linkedin-in"
       },
       {
         "text": "Github",
         "url": "#",
-        "icon": "partials/svg/github.svg"
+        "icon": "fab fa-github"
       }
     ]
   }

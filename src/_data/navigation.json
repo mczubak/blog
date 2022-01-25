@@ -3,12 +3,12 @@
       {
         "text": "About Me",
         "url": "/",
-        "icon": "partials/svg/about.svg"
+        "icon": "fas fa-user-alt"
       },
       {
         "text": "Blog",
         "url": "/blog/",
-        "icon": "partials/svg/blog.svg"
+        "icon": "fas fa-blog"
       }
     ]
 }
